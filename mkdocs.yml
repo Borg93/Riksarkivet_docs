@@ -1,0 +1,63 @@
+site_name: Riksarkivet Data Science
+
+# Repository
+repo_name: Borg93/khubist2
+repo_url: https://github.com/Borg93/khubist2
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+  language: en
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+      primary: #0063b2
+      accent: purple
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+      primary: #0063b2
+      accent: lime
+  logo: https://upload.wikimedia.org/wikipedia/commons/8/8d/Riksarkivet_myndighetsvapen_-_Riksarkivet_Sverige.png
+  favicon: https://upload.wikimedia.org/wikipedia/commons/8/8d/Riksarkivet_myndighetsvapen_-_Riksarkivet_Sverige.png
+
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/Riksarkivet
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/Riksarkivet
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/Riksarkivet/
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - admonition
+  - pymdownx.arithmatex:
+      generic: true
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.mark
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+copyright: |
+  &copy; 2023 <a href="https://github.com/Riksarkivet"  target="_blank" rel="noopener">Riksakrivet</a>
