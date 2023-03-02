@@ -1,37 +1,65 @@
-site_name: Riksarkivet Data Science
+# Project information
+site_name: National Archives of Sweden, AI
+site_url: https://Borg93.github.io/Riksarkivet_docs/
+site_author: Gabriel Borg
+site_description: >-
+  Work in progress documentation and experiment track Riksarkivet
 
 # Repository
-repo_name: Borg93/khubist2
-repo_url: https://github.com/Borg93/khubist2
+repo_name: Borg93/Riksarkivet_docs
+repo_url: https://github.com/Borg93/Riksarkivet_docs
 
+# Copyright
+copyright: Copyright &copy; 2023 Riksarkivet
+
+# Configuration
 theme:
   name: material
+  custom_dir: docs/overrides/
   features:
     - navigation.tabs
     - navigation.sections
-    - toc.integrate
     - navigation.top
+    - navigation.tracking
+    # - navigation.footer
+    - navigation.indexes
     - search.suggest
     - search.highlight
     - content.tabs.link
     - content.code.annotation
     - content.code.copy
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - announce.dismiss
+    - toc.follow
+
   language: en
   palette:
     - scheme: default
+      primary: indigo
+      accent: indigo
       toggle:
-        icon: material/toggle-switch-off-outline
+        icon: material/weather-night
         name: Switch to dark mode
-      primary: #0063b2
-      accent: purple
     - scheme: slate
+      primary: indigo
+      accent: indigo
       toggle:
-        icon: material/toggle-switch
+        icon: material/weather-sunny
         name: Switch to light mode
-      primary: #0063b2
-      accent: lime
-  logo: https://upload.wikimedia.org/wikipedia/commons/8/8d/Riksarkivet_myndighetsvapen_-_Riksarkivet_Sverige.png
-  favicon: https://upload.wikimedia.org/wikipedia/commons/8/8d/Riksarkivet_myndighetsvapen_-_Riksarkivet_Sverige.png
+  font:
+    text: Roboto
+    code: Roboto Mono
+  favicon: assets/fav-removebg-preview.png
+  icon:
+    logo: logo
+  logo: assets/fav-removebg-preview.png
+
+plugins:
+  - tags
+  - mkdocs-jupyter:
+      include_source: True
 
 extra:
   social:
@@ -41,23 +69,55 @@ extra:
       link: https://twitter.com/Riksarkivet
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/Riksarkivet/
+  generator: false
 
 markdown_extensions:
-  - pymdownx.highlight:
-      anchor_linenums: true
-  - pymdownx.inlinehilite
-  - pymdownx.snippets
+  - abbr
   - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
   - pymdownx.arithmatex:
       generic: true
-  - footnotes
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
   - pymdownx.details
-  - pymdownx.superfences
-  - pymdownx.mark
-  - attr_list
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:materialx.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
 
-copyright: |
-  &copy; 2023 <a href="https://github.com/Riksarkivet"  target="_blank" rel="noopener">Riksakrivet</a>
+# Page tree
+nav:
+  - Home: index.md
+  - Test:
+      - Getting started: test.md
+      - Installation: test2.md
+      - Creating your site: test3.md
+  - Notebook:
+      - 00. Getting Started with PyTorch: "00_pytorch_fundamentals.ipynb"
