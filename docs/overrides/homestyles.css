@@ -7,7 +7,7 @@
 .tx-container {
   padding-top: 0rem;
   background: linear-gradient(to bottom, var(--md-primary-fg-color), white);
-  height: 75vh;
+  height: 77.4vh;
   overflow: hidden; /* Hide scrollbars */
 }
 
@@ -27,11 +27,11 @@
 }
 
 .tx-hero__content {
-  padding-bottom: 1rem;
+  padding-bottom: 0rem;
   overflow: hidden; /* Hide scrollbars */
   align-items: center;
-  max-width: 22rem;
-  margin-top: 3.5rem;
+  max-width: 25rem;
+  margin-top: 5.5rem;
   margin-bottom: 3.5rem;
   margin-left: 1rem;
   margin-right: 4rem;
