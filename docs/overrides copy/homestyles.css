@@ -1,0 +1,94 @@
+.md-main {
+  flex-grow: 0;
+  height: 0px;
+  overflow: hidden; /* Hide scrollbars */
+}
+
+.tx-container {
+  padding-top: 0rem;
+  background: linear-gradient(to bottom, var(--md-primary-fg-color), white);
+  height: 77.4vh !important;
+  overflow: hidden; /* Hide scrollbars */
+}
+
+.tx-hero {
+  margin: 32px 2.8rem;
+  color: var(--md-primary-bg-color);
+  justify-content: center;
+  overflow: hidden; /* Hide scrollbars */
+  display: flex;
+  align-items: center;
+}
+
+.tx-hero h1 {
+  margin-bottom: 1rem;
+  color: currentColor;
+  font-weight: 700;
+}
+
+.tx-hero__content {
+  padding-bottom: 0rem;
+  overflow: hidden; /* Hide scrollbars */
+  align-items: center;
+  max-width: 25rem;
+  margin-top: 5.5rem;
+  margin-bottom: 3.5rem;
+  margin-left: 1rem;
+  margin-right: 4rem;
+}
+
+.tx-hero__image {
+  width: 17rem;
+  height: 17rem;
+  order: 1;
+  padding-right: 2.5rem;
+}
+
+.tx-hero .md-button {
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
+  color: var(--md-primary-bg-color);
+  border-radius: 0.3rem;
+}
+
+.tx-hero .md-button--primary {
+  background-color: var(--md-primary-bg-color);
+  color: hsla(280deg, 37%, 48%, 1);
+  border-color: var(--md-primary-bg-color);
+  border-radius: 0.3rem;
+}
+
+.tx-hero .md-button:focus,
+.tx-hero .md-button:hover {
+  background-color: var(--md-accent-fg-color);
+  color: var(--md-default-bg-color);
+  border-color: var(--md-accent-fg-color);
+}
+
+.text-center {
+  text-align: center;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 15px;
+  font-family: "Lato", sans-serif;
+  font-size: 23px;
+  font-weight: 300;
+  padding-bottom: 10px;
+}
+
+.md-nav__item {
+  display: none;
+}
+
+.md-nav__item--active {
+  display: none;
+}
+
+.md-nav--lifted {
+  display: none;
+}
+.md-nav__list {
+  display: none;
+}

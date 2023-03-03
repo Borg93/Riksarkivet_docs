@@ -1,6 +1,4 @@
-<!-- Custom HTML site displayed as the Home chapter -->
-
-{% extends "main.html" %} {% block tabs %} {{ super() }}
+{% extends "base.html" %} {% block tabs %} {{ super() }}
 
 <link rel="stylesheet" href="homestyles.css" />
 
@@ -8,11 +6,8 @@
 <section class="tx-container">
   <div class="md-grid md-typeset">
     <div class="tx-hero">
-      <div class="tx-hero__image">
-        <img src="assets/fav-removebg-preview.png" draggable="false" />
-      </div>
       <div class="tx-hero__content">
-        <h1>National Archives of Sweden</h1>
+        <h1>National Archives of Sweden, AI</h1>
         <p>
           Swedish National archives (Riksarkivet) open
           <b> Data Science </b> plattform for documentation. For analysts,
@@ -26,16 +21,11 @@
           Get started
         </a>
         <a href="https://riksarkivet.se/" title="Riksarkivet" class="md-button">
-          Go to Riksarkivet
+          Riksarkivet's Webpage
         </a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- <div class="top-hr">
-  <div class="hr"></div>
-</div> -->
-
-{% endblock %} {% block content %}{% endblock %} {% block footer %}{% endblock
-%}
+{% endblock %} {% block content %}{% endblock %}
