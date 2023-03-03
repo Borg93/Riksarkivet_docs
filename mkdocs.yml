@@ -58,6 +58,7 @@ theme:
 
 plugins:
   - tags
+  - search
   - mkdocs-jupyter:
       include_source: True
 
@@ -119,6 +120,8 @@ nav:
       - Getting started: test.md
       - Installation: test2.md
       - Creating your site: test3.md
+      - 00. Getting Started with PyTorch: "00_pytorch_fundamentals.ipynb"
+
   - Notebook test:
       - 00. Getting Started with PyTorch: "00_pytorch_fundamentals.ipynb"
       - 01. Getting Started with PyTorch: "00_pytorch_fundamentals.ipynb"
