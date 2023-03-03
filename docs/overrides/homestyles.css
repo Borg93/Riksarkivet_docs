@@ -7,7 +7,7 @@
 .tx-container {
   padding-top: 0rem;
   background: linear-gradient(to bottom, var(--md-primary-fg-color), white);
-  height: 77.4vh;
+  height: 77.4vh !important;
   overflow: hidden; /* Hide scrollbars */
 }
 
