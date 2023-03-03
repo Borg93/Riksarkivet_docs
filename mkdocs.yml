@@ -115,9 +115,13 @@ markdown_extensions:
 # Page tree
 nav:
   - Home: index.md
-  - Test:
+  - Pages within test:
       - Getting started: test.md
       - Installation: test2.md
       - Creating your site: test3.md
-  - Notebook:
+  - Notebook test:
       - 00. Getting Started with PyTorch: "00_pytorch_fundamentals.ipynb"
+      - 01. Getting Started with PyTorch: "00_pytorch_fundamentals.ipynb"
+
+  - Code block test:
+      - code block: test4.md
