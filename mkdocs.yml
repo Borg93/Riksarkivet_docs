@@ -106,7 +106,7 @@ markdown_extensions:
 # Page tree
 nav:
   - Home: index.md
-  - Pages within test:
+  - Blog:
       - Getting started: test.md
       - Installation: test2.md
       - Creating your site: test3.md
