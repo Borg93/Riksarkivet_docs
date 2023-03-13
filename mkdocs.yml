@@ -106,15 +106,15 @@ markdown_extensions:
 # Page tree
 nav:
   - Home: index.md
-  - Blog:
-      - Getting started: test.md
-      - Installation: test2.md
-      - Creating your site: test3.md
-      - 00. Getting Started with PyTorch: "00_pytorch_fundamentals.ipynb"
 
-  - Notebook test:
+  - Projects:
       - 00. Getting Started with PyTorch: "00_pytorch_fundamentals.ipynb"
       - 01. Getting Started with PyTorch: "00_pytorch_fundamentals.ipynb"
+      - code_test.md
 
-  - Code block test:
-      - code block: test4.md
+  - Playground:
+      - Poc: prototype.md
+
+  - Blog:
+      - Getting started: posts/blog1.md
+      - Installation: posts/blog2.md
