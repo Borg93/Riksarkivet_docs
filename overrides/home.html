@@ -1,0 +1,41 @@
+<!-- Custom HTML site displayed as the Home chapter -->
+
+{% extends "main.html" %} {% block tabs %} {{ super() }}
+
+<link rel="stylesheet" href="homestyles.css" />
+
+<!-- Main site Entry button descriptions -->
+<section class="tx-container">
+  <div class="md-grid md-typeset">
+    <div class="tx-hero">
+      <div class="tx-hero__image">
+        <img src="assets/fav-removebg-preview.png" draggable="false" />
+      </div>
+      <div class="tx-hero__content">
+        <h1>National Archives of Sweden</h1>
+        <p>
+          Swedish National archives (Riksarkivet) open
+          <b> Data Science </b> plattform for documentation. For analysts,
+          scientist and digital humaniora.
+        </p>
+        <a
+          href="{{ page.next_page.url | url }}"
+          title="{{ page.next_page.title | striptags }}"
+          class="md-button md-button--primary"
+        >
+          Get started
+        </a>
+        <a href="https://riksarkivet.se/" title="Riksarkivet" class="md-button">
+          Go to Riksarkivet
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- <div class="top-hr">
+  <div class="hr"></div>
+</div> -->
+
+{% endblock %} {% block content %}{% endblock %} {% block footer %}{% endblock
+%}
